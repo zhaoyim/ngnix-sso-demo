@@ -563,5 +563,12 @@ http {
 
 参考：https://www.jianshu.com/p/59c1c4f3dfab
 ```
+
+7. nginx 如何重定向https
+
+```
+$ 编译的时候 --with-http_ssl_module
+$ nginx.conf 添加 return 301 https://localhost:8443/gateway/ocdp/yarn;
+```
 	
 	
